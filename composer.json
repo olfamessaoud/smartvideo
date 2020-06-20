@@ -1,0 +1,26 @@
+{
+    "name": "content/smartvideo",
+    "description": "description",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    
+    "require": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "content\\smartvideo\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "content\\smartvideo\\SmartVideoServiceProvider"
+            ],
+            "aliases": {
+                "SmartVideo": "content\\smartvideo\\Facades\\SmartVideo"
+            }
+        }
+    }
+}
